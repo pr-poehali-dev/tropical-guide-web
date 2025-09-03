@@ -9,7 +9,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="sticky top-0 bg-white/90 backdrop-blur-sm border-b border-purple-100 z-50">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="font-heading font-bold text-2xl text-purple-600">СТУПИЦА</div>
+          <div className="font-heading font-bold text-2xl text-purple-600">TREVEL</div>
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-600 hover:text-purple-600 transition-colors">Главная</a>
             <a href="#destinations" className="text-gray-600 hover:text-purple-600 transition-colors">Направления</a>
@@ -250,7 +250,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="font-heading font-bold text-2xl text-purple-400 mb-4">СТУПИЦА</div>
+              <div className="font-heading font-bold text-2xl text-purple-400 mb-4">TREVEL</div>
               <p className="text-gray-400">Тропические приключения для настоящих мужчин</p>
             </div>
             <div>
