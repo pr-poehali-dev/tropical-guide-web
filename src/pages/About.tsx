@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -10,15 +11,15 @@ const About = () => {
       <nav className="sticky top-0 bg-black/20 backdrop-blur-md border-b border-purple-600/30 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <Icon name="Mountain" className="text-amber-400" size={32} />
               <div className="font-bold text-2xl text-white">СТУПИЦА</div>
-            </div>
+            </Link>
             <div className="hidden md:flex items-center gap-8">
-              <a href="/" className="text-white hover:text-amber-400 transition-colors font-medium">Главная</a>
-              <a href="/about" className="text-amber-400 font-bold">О нас</a>
-              <a href="/shop" className="text-white hover:text-amber-400 transition-colors font-medium">Магазин</a>
-              <a href="/terms" className="text-white hover:text-amber-400 transition-colors font-medium">Условия</a>
+              <Link to="/" className="text-white hover:text-amber-400 transition-colors font-medium">Главная</Link>
+              <Link to="/about" className="text-amber-400 font-bold">О нас</Link>
+              <Link to="/shop" className="text-white hover:text-amber-400 transition-colors font-medium">Магазин</Link>
+              <Link to="/terms" className="text-white hover:text-amber-400 transition-colors font-medium">Условия</Link>
               <Button className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-6">
                 Забронировать
               </Button>
@@ -80,7 +81,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="/img/cd49d7e0-8c55-4604-af57-61d54d0977ad.jpg" 
+                src="/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg" 
                 alt="Тропическое приключение"
                 className="w-full h-96 object-cover rounded-lg border-4 border-amber-400"
               />

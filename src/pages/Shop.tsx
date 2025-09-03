@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   return (
@@ -10,15 +11,15 @@ const Shop = () => {
       <nav className="sticky top-0 bg-black/20 backdrop-blur-md border-b border-purple-600/30 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3">
               <Icon name="Mountain" className="text-amber-400" size={32} />
               <div className="font-bold text-2xl text-white">СТУПИЦА</div>
-            </div>
+            </Link>
             <div className="hidden md:flex items-center gap-8">
-              <a href="/" className="text-white hover:text-amber-400 transition-colors font-medium">Главная</a>
-              <a href="/about" className="text-white hover:text-amber-400 transition-colors font-medium">О нас</a>
-              <a href="/shop" className="text-amber-400 font-bold">Магазин</a>
-              <a href="/terms" className="text-white hover:text-amber-400 transition-colors font-medium">Условия</a>
+              <Link to="/" className="text-white hover:text-amber-400 transition-colors font-medium">Главная</Link>
+              <Link to="/about" className="text-white hover:text-amber-400 transition-colors font-medium">О нас</Link>
+              <Link to="/shop" className="text-amber-400 font-bold">Магазин</Link>
+              <Link to="/terms" className="text-white hover:text-amber-400 transition-colors font-medium">Условия</Link>
               <Button className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-6">
                 Корзина (0)
               </Button>
@@ -96,7 +97,7 @@ const Shop = () => {
                 name: "ТАКТИЧЕСКИЕ ШОРТЫ СТУПИЦА",
                 price: "₽ 4,500",
                 originalPrice: "₽ 6,000",
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "ХИТ",
                 rating: 5,
                 description: "Водоотталкивающие шорты для экстремальных условий"
@@ -105,7 +106,7 @@ const Shop = () => {
                 name: "КОМПАС ПРОФЕССИОНАЛЬНЫЙ",
                 price: "₽ 8,900",
                 originalPrice: "₽ 12,000",
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "НОВИНКА",
                 rating: 5,
                 description: "Точная навигация в любых условиях тропиков"
@@ -114,7 +115,7 @@ const Shop = () => {
                 name: "РЮКЗАК ЭКСПЕДИЦИОННЫЙ 60L",
                 price: "₽ 15,900",
                 originalPrice: "₽ 20,000",
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "СКИДКА",
                 rating: 4,
                 description: "Надёжный спутник для длительных походов"
@@ -123,7 +124,7 @@ const Shop = () => {
                 name: "ФУТБОЛКА СТУПИЦА ЭЛИТ",
                 price: "₽ 2,900",
                 originalPrice: null,
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "МЕРЧ",
                 rating: 5,
                 description: "Премиальный хлопок с логотипом компании"
@@ -132,7 +133,7 @@ const Shop = () => {
                 name: "ОЧКИ ТРОПИЧЕСКИЕ UV400",
                 price: "₽ 6,500",
                 originalPrice: "₽ 8,500",
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "ЗАЩИТА",
                 rating: 5,
                 description: "Максимальная защита от солнца и ветра"
@@ -141,7 +142,7 @@ const Shop = () => {
                 name: "НОЖ ВЫЖИВАНИЯ TITANIUM",
                 price: "₽ 12,500",
                 originalPrice: null,
-                image: "/img/dd949502-d9e7-46f9-8994-1b782e204a1a.jpg",
+                image: "/img/21153970-c162-4896-a75c-c746d4dc73cd.jpg",
                 badge: "PREMIUM",
                 rating: 5,
                 description: "Титановый клинок для экстремальных ситуаций"
